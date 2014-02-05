@@ -1,9 +1,10 @@
 {
-	"name": "cards",
-	"description": "Client and server to play card games",
-	"version": "0.0.1",
-	"private": true,
-	"dependencies": {
-		"express": "3.x"
-	}
+  "name": "cards",
+  "description": "Client and server to play card games",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "jade": "~1.1.5"
+  }
 }
