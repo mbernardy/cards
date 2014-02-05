@@ -1,14 +1,10 @@
 function Hand(){
 	
-	var _$root = $('<canvas id="board" width="500" height="80"></canvas>');
-	var _$divRoot = $('<div>');
-
-	var _cardWidth = 35;
+	var _$divRoot = $('<div class = "hand">');
 
 
 	function _init(){
-		var elem = _$root.get(0);
-		_ctx = elem.getContext('2d');
+
 	}
 
 	this.draw = function(){
@@ -18,10 +14,15 @@ function Hand(){
 			for(var i=0; i < arguments.length; i++){
 				var $svg =  $(arguments[i]);
 				$svg.width('35');
-				$svg.height('50');
-				var $card = $('<div>');
+				$svg.height('55');
+				if( i != 0){
+					$svg.css('margin-left' , -30);
+				}
+				$card = $('<span>');
 				$card.append($svg);
-				_$divRoot.append($svg);
+				$card.on('click', function(e){
+				})
+				_$divRoot.append($card);
 			}
 
 		});
